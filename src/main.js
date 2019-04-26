@@ -7,6 +7,7 @@ import fastClick from 'fastclick'
 import './assets/styles/reset.css'
 // 1像素边框问题
 import './assets/styles/border.css'
+import './assets/styles/iconfont.css'
 
 Vue.config.productionTip = false
 // 将fastClick绑定到document.body，解决移动端click300ms网络延时问题
