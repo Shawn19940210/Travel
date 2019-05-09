@@ -2,7 +2,7 @@
     <div>
         <div class="recommend-title">热销推荐</div>
         <ul>
-            <li class="item border-bottom" v-for="item of recommendList"
+            <li class="item border-bottom" v-for="item of list"
             :key="item.id">
                 <img class="item-img" :src="item.imgUrl"/>
                 <div class="item-info">
@@ -18,25 +18,8 @@
 <script>
 export default {
   name: 'HomeRecommend',
-  data () {
-    return {
-      recommendList: [{
-        id: '0001',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1507/1d/116e14079ea2130a37b92117571739f3.water.jpg_250x250_09bc61ab.jpg',
-        title: '镇江金山',
-        desc: 'AAAAA景区，dsdsdss好评如潮,小伙伴热推景点'
-      }, {
-        id: '0002',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1505/db/db385f67bcb396bf.water.jpg_250x250_910064a5.jpg',
-        title: '茅山风景区',
-        desc: 'AAAAA景区，好评如潮,小伙伴热推景点'
-      }, {
-        id: '0003',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/201404/03/50b6fddd61f298eebbae4c0eb740ec71.jpg_250x250_4a81ea82.jpg',
-        title: '北固山',
-        desc: 'AAAAA景区，好评如潮,小伙伴热推景点'
-      }]
-    }
+  props: {
+    list: Array
   }
 }
 </script>
